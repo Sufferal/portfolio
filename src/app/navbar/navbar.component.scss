@@ -1,0 +1,128 @@
+.navbar {
+  padding: 2.5rem 0;
+  background-color: var(--secondary-color);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .author {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active .links {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+    &.active .line-1 {
+      transform: rotate(45deg);
+    }
+    
+    &.active .line-2 {
+      transform: scaleY(0);
+    }
+    
+    &.active .line-3 {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    transform: translateX(5rem);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out,
+                opacity 0.2s ease-out;
+  }
+
+  .link {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 5rem;
+
+    // For animation
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2.5px;
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      bottom: -0.5rem;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+    
+    &:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .hamburger-menu {
+    width: 32px;
+    height: 26px;
+    top: 17px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: var(--primary-color);
+      
+      &.line-1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      &.line-2 {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &.line-3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+// Media queries
+@media screen and (max-width: 992px) {
+  .navbar {
+    .menu {
+      display: none;
+    }
+
+    .container {
+      justify-content: center;
+    }
+  }
+}
