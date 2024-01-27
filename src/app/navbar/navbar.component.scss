@@ -9,9 +9,11 @@
   }
 
   .author {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    font-weight: bold;
+    &-link {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
   }
 
   .menu {
@@ -115,14 +117,10 @@
 }
 
 // Media queries
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .navbar {
-    .menu {
+    .hamburger-menu {
       display: none;
-    }
-
-    .container {
-      justify-content: center;
     }
   }
 }
