@@ -1,0 +1,43 @@
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-wrapper flex-center">
+      <div
+        class="project flex-center"
+        *ngFor="let project of projects"
+        [ngClass]="{ best: project.isBest }"
+      >
+        <a [href]="project.link" target="_blank">
+          <div class="project-image-wrapper flex-center">
+            <img
+              class="project-image"
+              [src]="project.image"
+              [alt]="project.name"
+            />
+          </div>
+          <div class="project-info">
+            <h2 class="project-title">
+              <a [href]="project.link" class="project-link" target="_blank">
+                {{ project.name }}
+              </a>
+            </h2>
+            <p class="project-description">{{ project.description }}</p>
+            <p class="project-problem">
+              <span class="project-label">Problem: </span>
+              {{ project.problem }}
+            </p>
+            <p class="project-solution">
+              <span class="project-label">Solution: </span>
+              {{ project.solution }}
+            </p>
+            <h3 class="project-label project-label-stack">Stack </h3>
+            <p class="project-stack flex-center">
+              <span *ngFor="let s of project.stack" [class]="'stack ' + 'stack-' + s.toLowerCase()">{{ s }}</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

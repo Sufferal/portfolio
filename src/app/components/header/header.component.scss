@@ -9,12 +9,14 @@
 .header {
   &-title {
     font-size: 5.5rem;
+    color: var(--secondary-color);
     margin-bottom: 5rem;
     max-width: 50vw;
   }
 
   &-subtitle {
     font-size: 2.5rem;
+    color: var(--secondary-color);
     font-weight: normal;
     line-height: 1.5;
     max-width: 35vw;

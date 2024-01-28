@@ -1,0 +1,94 @@
+.project {
+  flex-basis: 33.3%;
+  height: 650px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  padding: 5rem;
+  margin-right: 10rem;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+  &.best {
+    background-color: var(--highlight-color);
+    transform: scale(1.1);
+    border: none;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+    
+    .project-title, 
+    .project-link,
+    .project-description,
+    .project-label, 
+    .project-problem,
+    .project-solution,
+    .project-stack {
+      color: var(--primary-color);
+    }
+
+    .project-link:hover {
+      color: var(--secondary-color);
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-wrapper {
+    margin-top: 10rem;
+    align-items: start;
+  }
+
+  &-image {
+    --image-size: 80px;
+    width: var(--image-size);
+    height: var(--image-size); 
+  }
+
+  &-title, 
+  &-link,
+  &-description,
+  &-label,  
+  &-problem,
+  &-solution,
+  &-stack {
+    color: var(--secondary-color);
+  }
+
+  &-description,
+  &-problem,
+  &-solution {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+  }
+
+  &-title {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  &-link {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--highlight-color);
+    }
+  }  
+
+  &-label {
+    font-weight: bold;
+
+    &-stack {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}

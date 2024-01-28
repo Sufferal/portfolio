@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Admin Dashboard",
+    "description": "Lets you oversee client machines and perform operations",
+    "image": "assets/images/admin-dashboard.png",
+    "link": "https://github.com/Sufferal/admin-dashboard",
+    "problem": "Difficulty in managing client machines and keeping track of their status",
+    "solution": "Web dashboard, fast and easy to use, real-time updates",
+    "stack": ["C++", "JavaScript", "HTML", "CSS"],
+    "isBest": false
+  },
+  {
+    "id": 2,
+    "name": "MindShare",
+    "description": "Social media platform for sharing your thoughts and ideas with the world.",
+    "image": "assets/images/mindshare.png",
+    "link": "https://github.com/Sufferal/MindShare",
+    "problem": "Addiction,  lack of mental health resources, no peer to peer support",
+    "solution": "User-friendly social media, resource hub, community support",
+    "stack": ["Angular", ".NET"],
+    "isBest": true
+  },
+  {
+    "id": 3,
+    "name": "Perfect Pixel",
+    "description": "Upload an image of a handwritten text and converts it into a digital text format",
+    "image": "assets/images/perfect-pixel.png",
+    "link": "https://github.com/Sufferal/Schedule-Management",
+    "problem": "Hard to transfter study time table from paper to digital format",
+    "solution": "Take a picture, upload it, and get a digital copy of your time table",
+    "stack": ["React", "Python", "Flask"],
+    "isBest": false
+  }
+]

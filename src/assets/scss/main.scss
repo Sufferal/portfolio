@@ -1,6 +1,7 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
+  --highlight-color: #f7df1e;
   --primary-font: 'Raleway', Arial, sans-serif;
 }
 
@@ -8,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: var(--primary-font);
 }
 
@@ -19,6 +20,7 @@ html {
 body {
   background-color: var(--secondary-color);
   overflow-x: hidden;
+  font-size: 1.6rem;
   
   a {
     text-decoration: none;
