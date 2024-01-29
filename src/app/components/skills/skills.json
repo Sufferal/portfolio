@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "level": "Beginner",
+    "experience": "2 months",
+    "logo": "assets/images/skills/react.png",
+    "features": ["Hook", "Component", "Directive"] 
+  },
+  {
+    "id": 2,
+    "name": "Angular",
+    "level": "Intermediate",
+    "experience": "6 months",
+    "logo": "assets/images/skills/angular.png",
+    "features": ["Component", "Directive", "Pipe", "Service", "Module"]
+  }, 
+
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "level": "Advanced",
+    "experience": "2 years",
+    "logo": "assets/images/skills/javascript.png",
+    "features": ["DOM Manipulation", "Asynchronous Programming", "Event Handling"] 
+  }
+]

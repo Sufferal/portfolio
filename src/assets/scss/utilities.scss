@@ -2,6 +2,18 @@
 .section {
   padding-top: 5rem;
   padding-bottom: 10rem;
+
+  &-inverse {
+    background-color: var(--primary-color);
+    
+    .section-title {
+      color: var(--secondary-color);
+
+      &::after {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
   
   &-title {
     color: var(--primary-color);
@@ -35,7 +47,7 @@
   margin-right: 1rem;
 
   &-angular {
-    color: #c3002f; 
+    color: var(--angular-color); 
   }
 
   &-html {
@@ -59,7 +71,7 @@
   }
 
   &-react {
-    color: #61dbfb;
+    color: var(--react-color);
   }
 
   &-python { 
@@ -68,6 +80,20 @@
 
   &-flask {
     color: #4db2c4;
+  }
+}
+
+.level {
+  &-beginner {
+    color: #00684A;
+  }
+
+  &-intermediate {
+    color: var(--highlight-color);
+  }
+
+  &-advanced {
+    color: var(--angular-color); 
   }
 }
 
