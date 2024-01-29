@@ -1,0 +1,29 @@
+<section id="skills" class="section section-inverse">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    
+    <div class="skill-wrapper">
+      <div 
+        [class]="'skill skill-' + skill.name.toLowerCase()"
+        *ngFor="let skill of skills"
+      >
+        <div class="skill-logo-wrapper">
+          <img [src]="skill.logo" [alt]="skill.name" class="skill-logo">
+        </div>
+        <h2 class="skill-title">{{ skill.name }}</h2>
+        <h3 class="skill-level">
+          <span class="skill-label">Level: </span>
+          <span [class]="'level level-' + skill.level.toLowerCase()">{{ skill.level }}</span>
+        </h3>
+        <h3 class="skill-experience">
+          <span class="skill-label">Experience: </span>
+          {{ skill.experience }}
+        </h3>
+        <h3 class="skill-features">Features: </h3>
+        <ul [class]="'skill-list skill-list-' + skill.name.toLowerCase()">
+          <li *ngFor="let feat of skill.features" class="skill-item">{{ feat }}</li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</section>

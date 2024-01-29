@@ -1,0 +1,120 @@
+.skill {
+  flex-basis: 33.3%;  
+  height: 500px;
+  margin-right: 10rem;
+  padding: 5rem;
+  border: 3px solid var(--secondary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--secondary-color);
+
+    &.skill-react {
+      border-color: var(--react-color);
+      -webkit-box-shadow: 0px 0px 30px 0px var(--react-color);
+      -moz-box-shadow: 0px 0px 30px 0px var(--react-color);
+      box-shadow: 0px 0px 30px 0px var(--react-color);
+    }
+
+    &.skill-angular {
+      border-color: var(--angular-color);
+      -webkit-box-shadow: 0px 0px 30px 0px var(--angular-color);
+      -moz-box-shadow: 0px 0px 30px 0px var(--angular-color);
+      box-shadow: 0px 0px 30px 0px var(--angular-color);
+    }
+
+    &.skill-javascript {
+      border-color: var(--highlight-color);
+      -webkit-box-shadow: 0px 0px 30px 0px var(--highlight-color);
+      -moz-box-shadow: 0px 0px 30px 0px var(--highlight-color);
+      box-shadow: 0px 0px 30px 0px var(--highlight-color);
+    }
+
+    .skill-title,
+    .skill-level,
+    .skill-label,
+    .skill-experience,
+    .skill-features,
+    .skill-item {
+      color: var(--primary-color);
+    }
+
+    .level-intermediate {
+      color: var(--angular-color);
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  &-title, 
+  &-level,
+  &-label, 
+  &-experience,
+  &-features,
+  &-item {
+    color: var(--secondary-color);
+  }
+
+  &-level,
+  &-experience,
+  &-features {
+    margin-bottom: 1.25rem;
+  }
+
+  &-logo {
+    --logo-size: 100px;
+    width: var(--logo-size);
+    height: var(--logo-size); 
+    margin-bottom: 2rem;
+
+    &-wrapper {
+      text-align: center;
+    }
+  }
+
+  &-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  &-list {
+    &-react li {
+      list-style-type: none;
+      background: url('../../../assets/images/skills/react.png') no-repeat left center;
+      background-size: 20px 20px;
+      padding-left: 30px;
+      margin-bottom: 1rem;
+    }
+
+    &-angular li {
+      list-style-type: none;
+      background: url('../../../assets/images/skills/angular.png') no-repeat left center;
+      background-size: 20px 20px;
+      padding-left: 30px;
+      margin-bottom: 1rem;
+    }
+
+    &-javascript li {
+      list-style-type: none;
+      background: url('../../../assets/images/skills/javascript.png') no-repeat left center;
+      background-size: 20px 20px;
+      padding-left: 30px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-item {
+    font-weight: bold;
+  }
+}
