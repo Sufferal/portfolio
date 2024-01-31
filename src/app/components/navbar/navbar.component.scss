@@ -2,6 +2,21 @@
   padding: 2.5rem 0;
   background-color: var(--secondary-color);
 
+  &-sticky {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    --horizontal-length: 0px;
+    --vertical-length: 0px;
+    --blur-radius: 7px;
+    --spread-radius: 0px;
+    --shadow-color: var(--primary-color);
+    -webkit-box-shadow: var(--horizontal-length) var(--vertical-length) var(--blur-radius) var(--spread-radius) var(--shadow-color);
+    -moz-box-shadow: var(--horizontal-length) var(--vertical-length) var(--blur-radius) var(--spread-radius) var(--shadow-color); 
+    box-shadow: var(--horizontal-length) var(--vertical-length) var(--blur-radius) var(--spread-radius) var(--shadow-color); 
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -55,6 +70,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-right: 5rem;
+    cursor: pointer;
 
     // For animation
     position: relative;

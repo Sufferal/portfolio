@@ -24,10 +24,10 @@
   {
     "id": 3,
     "name": "Perfect Pixel",
-    "description": "Upload an image of a handwritten text and converts it into a digital text format",
+    "description": "Upload an image of a handwritten text and convert it into a digital text format",
     "image": "assets/images/projects/perfect-pixel.png",
     "link": "https://github.com/Sufferal/Schedule-Management",
-    "problem": "Hard to transfter study time table from paper to digital format",
+    "problem": "Hard to transfer study time table from paper to digital format",
     "solution": "Take a picture, upload it, and get a digital copy of your time table",
     "stack": ["React", "Python", "Flask"],
     "isBest": false
