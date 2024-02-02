@@ -4,7 +4,12 @@
   --highlight-color: #f7df1e;
   --angular-color: #c3002f;
   --react-color: #61dbfb;
+
   --primary-font: 'Raleway', Arial, sans-serif;
+  --secondary-font: 'Sacramento', cursive;
+  
+  --animation-shadow: #f1f5b5;
+  --animation-color: var(--angular-color);
 }
 
 * {

@@ -26,8 +26,18 @@
   .author {
     &-link {
       color: var(--primary-color);
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bold;
+      font-family: var(--secondary-font);
+      text-shadow: 0 0 5px var(--animation-shadow), 
+                   0 0 15px var(--animation-shadow),
+                   0 0 20px var(--animation-shadow),
+                   0 0 40px var(--animation-shadow),
+                   0 0 60px var(--animation-shadow),
+                   0 0 10px var(--animation-shadow),
+                   0 0 98px var(--animation-shadow);
+      animation: blink 12s infinite;
+      -webkit-animation: blink 12s infinite;
     }
   }
 
@@ -138,5 +148,60 @@
     .hamburger-menu {
       display: none;
     }
+  }
+}
+
+// Animation
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: var(--primary-color); 
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--animation-shadow), 
+                 0 0 15px var(--animation-shadow), 
+                 0 0 20px var(--animation-shadow),
+                 0 0 40px var(--animation-shadow),
+                 0 0 60px var(--animation-shadow),
+                 0 0 10px var(--animation-shadow),
+                 0 0 98px var(--animation-shadow);
+    color: var(--animation-color);
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: var(--primary-color);
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--animation-shadow),
+                 0 0 15px var(--animation-shadow),
+                 0 0 20px var(--animation-shadow),
+                 0 0 40px var(--animation-shadow), 
+                 0 0 60px var(--animation-shadow),
+                 0 0 10px var(--animation-shadow), 
+                 0 0 98px var(--animation-shadow);
+    color: var(--animation-color); 
   }
 }
