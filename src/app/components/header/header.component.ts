@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  particles: any = []
 
+  ngOnInit() {
+    this.particles = Array(100).fill(0);
+  }
 }

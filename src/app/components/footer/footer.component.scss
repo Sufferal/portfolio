@@ -31,7 +31,22 @@
 }
 
 .credit {
+  &-title {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    
+    a {
+      color: var(--highlight-color);
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        color: var(--angular-color);
+      }
+    }
+  }
+
   &-item{
+      color: var(--secondary-color);
       list-style-type: none;
       background: url('../../../assets/images/footer/flaticon.png') no-repeat left center;
       background-size: 20px 20px;
