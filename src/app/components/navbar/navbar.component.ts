@@ -23,8 +23,6 @@ export class NavbarComponent {
 
       if (st > this.lastScrollTop) {
         this.renderer.addClass(this.document.querySelector('.navbar'), 'navbar-sticky');
-      } else if (st === 0) {
-        this.renderer.removeClass(this.document.querySelector('.navbar'), 'navbar-sticky');
       }
 
       this.lastScrollTop = st <= 0 ? 0 : st;
