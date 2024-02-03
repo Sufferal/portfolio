@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #222;
+  --secondary-color: #fff;
+  --highlight-color: #f7df1e;
+  --angular-color: #c3002f;
+  --react-color: #61dbfb;
+
+  --primary-font: 'Raleway', Arial, sans-serif;
+  --secondary-font: 'Sacramento', cursive;
+  
+  --animation-shadow: #f1f5b5;
+  --animation-color: var(--angular-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
